@@ -1,0 +1,108 @@
+html{
+    overflow-y:scroll
+}
+body,ul,ol,p,dl,dd,form,textarea,h2,h3,h4{
+    margin:0;
+}
+
+ul,ol,input,button,td,th{
+    padding:0;
+}
+ul,ol{
+    list-style-type:none;
+    list-style-position:outside;
+}
+a{
+    text-decoration:none;
+}
+a img{
+    border:none;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    table-layout:fixed;
+}
+.clear{
+    clear:both;
+}
+.clearfix{
+    zoom:1
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+    height:0;
+    font-size:0;
+    line-height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+body{
+    font:12px/1.5 Tahoma,simsun,'宋体',Helvetica,simsun,sans-serif;
+    color:#222;
+    background:#fff;
+}
+.wrapper{
+    width:960px;
+    margin:0 auto;
+}
+.header{
+    position:relative;
+    zoom:1
+}
+.logo{
+    float:left;
+    width:168px;
+    height:56px;
+    margin:0;
+    padding-top:21px;
+}
+.logo a{
+    display:block;
+    height:100%;
+    text-indent:-999em;
+    overflow:hidden;
+    background:#eee;
+}
+.search{
+    float:right;
+    margin-top:37px;
+}
+.search input.txt{
+    height:23px;
+    width:343px;
+    line-height:23px;
+    border:1px solid #ccc;
+    border-radius:2px 0 0 2px;
+}
+.search input.btn{
+    width:60px;
+    height:25px;
+    border:1px solid #ccc;
+    border-left:none;
+    border-radius:0 2px 2px 0;
+}
+.loginbar{
+    position:absolute;
+    right:0;
+    top:2px;
+}
+input.txt,input.btn,.loginbar a,.loginbar span{
+    vertical-align:middle
+}
+.loginbar input.txt{
+    width:100px;
+    border:1px solid #bbb;
+    background:#fff;
+    height:17px;
+    line-height:19px;
+}
+.loginbar input.btn{
+    border-style:solid solid solid none;
+    border-color:#bbb;
+    border-width:1px;
+    border-radius:0 2px 2px 0;
+    height:19px;
+}
