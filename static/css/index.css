@@ -44,11 +44,14 @@ body{
     color:#222;
     background:#fff;
 }
-.wrapper{
+.wrapper,.header_wrap{
     width:960px;
     margin:0 auto;
 }
 .header{
+    background:url(../img/nav_bg.png) repeat-x 0 bottom
+}
+.header_wrap{
     position:relative;
     zoom:1
 }
@@ -57,7 +60,7 @@ body{
     width:168px;
     height:56px;
     margin:0;
-    padding-top:21px;
+    padding:12px 0;
 }
 .logo a{
     display:block;
@@ -66,43 +69,44 @@ body{
     overflow:hidden;
     background:#eee;
 }
-.search{
-    float:right;
-    margin-top:37px;
+.nav{
+    height:44px;
+    background:url(../img/nav_bg.png) repeat-x 0 bottom
 }
-.search input.txt{
-    height:23px;
-    width:343px;
-    line-height:23px;
-    border:1px solid #ccc;
-    border-radius:2px 0 0 2px;
+.nav a,.nav a span{
+    display:inline-block;
+    height:31px;
+    line-height:31px;
+    cursor:pointer;
 }
-.search input.btn{
-    width:60px;
-    height:25px;
-    border:1px solid #ccc;
-    border-left:none;
-    border-radius:0 2px 2px 0;
+.nav a{
+    padding-left:17px;
+    font-size:14px;
+    font-family:"微软雅黑","黑体","宋体";
+    color:#fff;
+    margin-top:6px;
+    font-weight:bold
 }
-.loginbar{
-    position:absolute;
-    right:0;
-    top:2px;
+.nav a span{
+    padding-right:17px;
 }
-input.txt,input.btn,.loginbar a,.loginbar span{
-    vertical-align:middle
+.nav a.current,.nav a.current span,.nav a:hover,.nav a:hover span{
+    background-image:url(../img/nav_cur_over.png);
+    background-repeat:no-repeat;
 }
-.loginbar input.txt{
-    width:100px;
-    border:1px solid #bbb;
-    background:#fff;
-    height:17px;
-    line-height:19px;
+.nav a.current,.nav a:hover{
+    background-position:0 0;
+    color:#c31a1a;
 }
-.loginbar input.btn{
-    border-style:solid solid solid none;
-    border-color:#bbb;
-    border-width:1px;
-    border-radius:0 2px 2px 0;
-    height:19px;
+.nav a.current span,.nav a:hover span{
+    background-position:right 0
 }
+/*
+ *.nav a:hover{
+ *    background-position:0 -41px;
+ *    color:#c31a1a;
+ *}
+ *.nav a:hover span{
+ *    background-position:right -41px;
+ *}
+ */
