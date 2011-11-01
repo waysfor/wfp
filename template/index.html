@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <title>首页</title>
         <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+        <script type="text/javascript" src="../static/js/jquery.js"></script>
+        <script type="text/javascript" src="../static/js/base.js"></script>
     </head>
     <body>
         <div class="header">
@@ -22,9 +24,9 @@
                 </div>
                 <form action="">
                     <div class="search">
-                        <span class="search_type">公开课</span><input type="text" class="txt" /><input type="submit" class="btn" value="搜索" />
-                        <input type="hidden" value="公开课" />
-                        <ul class="typelist">
+                        <span class="search_type" id="search_type"><em id="option">公公开课开课</em><i class="arrow">arrow</i></span><input type="text" class="txt" /><input type="submit" class="btn" value="搜索" />
+                        <input type="hidden" value="公开课" id="checked" />
+                        <ul class="typelist" id="typelist">
                             <li><a href="#">公开课</a></li>
                             <li><a href="#">企业内训</a></li>
                             <li><a href="#">培训讲师</a></li>
@@ -45,22 +47,57 @@
                         </h2>
                     </div>
                     <div class="rc clearfix">
-                        <!--left col-->
                         <div class="cl">
-                            <div class="emptytips">
-                                暂无相关内容，请浏览其他内容
+                            <div class="box">
+                                <div class="bt">
+                                    <h3>
+                                        <span>模块标题</span>
+                                    </h3>
+                                </div>
+                                <div class="bc">
+                                    模块内容
+                                </div>
                             </div>
                         </div>
-                        <!--middle col-->
                         <div class="cm">
-                            <div class="emptytips">
-                                暂无相关内容，请浏览其他内容
+                            <div class="box">
+                                <div class="bt">
+                                    <h3>
+                                        <span>列表</span>
+                                    </h3>
+                                </div>
+                                <div class="bc">
+                                    <ul class="list">
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                        <li><a href="#">企业全面预算管理与控制</a><span class="time">2011-11-01</span></li> 
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <!--right col-->
                         <div class="cr">
-                            <div class="emptytips">
-                                暂无相关内容，请浏览其他内容
+                            <div class="box">
+                                <div class="bt">
+                                    <h3>
+                                        <span>培训分类</span>
+                                    </h3>
+                                </div>
+                                <div class="bc">
+                                    <ul class="traintype">
+                                        <li><a href="#">人力资源</a></li>
+                                        <li><a href="#">综合管理</a></li>
+                                        <li><a href="#">生产管理</a></li>
+                                        <li><a href="#">营销管理</a></li>
+                                        <li><a href="#">财务管理</a></li>
+                                        <li><a href="#">物流采购</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,13 +111,11 @@
                         </h2>
                     </div>
                     <div class="rc clearfix">
-                        <!--left col-->
                         <div class="cl">
                             <div class="emptytips">
                                 暂无相关内容，请浏览其他内容
                             </div>
                         </div>
-                        <!--right col-->
                         <div class="cr">
                             <div class="emptytips">
                                 暂无相关内容，请浏览其他内容
